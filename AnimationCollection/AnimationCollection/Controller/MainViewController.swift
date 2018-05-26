@@ -11,7 +11,12 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let classNames = [ButtonViewController.className]
+    let classNames = [ButtonViewController.className,
+                      ChainAnimationViewController.className]
+    
+    let viewControllers = [ButtonViewController.self,
+                   ChainAnimationViewController.self
+                  ]
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,7 +24,8 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         
         setupTableView()
- 
+        
+
     }
 
 }
@@ -38,22 +44,23 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return viewControllers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(with:MainTableViewCell.self, for: indexPath)
-        cell.label.text = classNames[indexPath.row]
+
+        cell.label.text = viewControllers[indexPath.row].className
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        self.navigationController?.pushViewController(ButtonViewController.fromStoryboard(), animated: true)
+            self.navigationController?.pushViewController(viewControllers[indexPath.row].fromStoryboard(), animated: true)
         
-        
-    }
+        }
     
-}
+    }
+
 

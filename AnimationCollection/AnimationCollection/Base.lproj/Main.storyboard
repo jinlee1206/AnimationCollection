@@ -111,6 +111,49 @@
             </objects>
             <point key="canvasLocation" x="1510" y="384"/>
         </scene>
+        <!--Chain Animation View Controller-->
+        <scene sceneID="gsC-hT-kvo">
+            <objects>
+                <viewController storyboardIdentifier="ChainAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CcL-6a-eLk" customClass="ChainAnimationViewController" customModule="AnimationCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rkE-ae-XyT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSm-0E-cbY">
+                                <rect key="frame" x="56" y="319" width="262.5" height="50.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIX-pT-Dch">
+                                        <rect key="frame" x="0.0" y="0.0" width="37" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58Y-YT-fGD">
+                                        <rect key="frame" x="0.0" y="30" width="30.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PSm-0E-cbY" firstAttribute="centerX" secondItem="o3X-UU-dfa" secondAttribute="centerX" id="F2Z-SD-H8f"/>
+                            <constraint firstItem="PSm-0E-cbY" firstAttribute="width" secondItem="rkE-ae-XyT" secondAttribute="width" multiplier="70%" id="heJ-Jx-nGC"/>
+                            <constraint firstItem="PSm-0E-cbY" firstAttribute="centerY" secondItem="o3X-UU-dfa" secondAttribute="centerY" id="yUU-U5-0fj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="o3X-UU-dfa"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainLabel" destination="VIX-pT-Dch" id="gQ4-PF-EIy"/>
+                        <outlet property="subLabel" destination="58Y-YT-fGD" id="Rca-oj-d64"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSK-vf-04k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="384"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oIL-yr-Plp">
             <objects>
