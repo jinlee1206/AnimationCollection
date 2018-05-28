@@ -11,11 +11,10 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    let classNames = [ButtonViewController.className,
-                      ChainAnimationViewController.className]
-    
     let viewControllers = [ButtonViewController.self,
-                   ChainAnimationViewController.self
+                   ChainAnimationViewController.self,
+                   CircleProgressBarViewController.self
+                   
                   ]
 
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +25,12 @@ class MainViewController: UIViewController {
         setupTableView()
         
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        animationTableView()
     }
 
 }
@@ -61,6 +66,45 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource {
         
         }
     
+    
+    
+    private func animationTableView() {
+        
+        tableView.reloadData()
+        let cells = tableView.visibleCells
+        
+        let tableViewHeight = self.tableView.bounds.size.height
+        
+        for cell in cells {
+            
+            cell.transform = CGAffineTransform(translationX: 0, y: tableViewHeight)
+            
+        }
+
+        var delayCounter = 0
+        for cell in cells {
+            
+            UIView.animate(withDuration: 1.75, delay: Double(delayCounter) * 0.05, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseOut, animations: {
+                cell.transform = CGAffineTransform.identity
+            }, completion: nil)
+            
+            delayCounter += 1
+            
+        }
+ 
     }
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
 
 

@@ -10,10 +10,7 @@ import Foundation
 import UIKit
 
 
-/* https://www.youtube.com/watch?v=ox2MieJzcRQ&t=293s
- 
- 
- */
+// https://www.youtube.com/watch?v=ox2MieJzcRQ&t=293s
 
 
 class ButtonViewController : UIViewController {

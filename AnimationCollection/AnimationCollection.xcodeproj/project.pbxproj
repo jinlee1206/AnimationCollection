@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DB0270EA20B7FCFF0000F99A /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */; };
 		DB02713920B99ECE0000F99A /* ChainAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */; };
-		DB0FE3F920BA88C800299DF7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE3F820BA88C800299DF7 /* TestViewController.swift */; };
+		DB0FE3F920BA88C800299DF7 /* CircleProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */; };
 		DBD7F9A120B286B400605855 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7F9A020B286B400605855 /* AppDelegate.swift */; };
 		DBD7F9A320B286B400605855 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7F9A220B286B400605855 /* MainViewController.swift */; };
 		DBD7F9A620B286B400605855 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBD7F9A420B286B400605855 /* Main.storyboard */; };
@@ -23,7 +23,7 @@
 /* Begin PBXFileReference section */
 		DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainAnimationViewController.swift; sourceTree = "<group>"; };
-		DB0FE3F820BA88C800299DF7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarViewController.swift; sourceTree = "<group>"; };
 		DBD7F99D20B286B400605855 /* AnimationCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBD7F9A020B286B400605855 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBD7F9A220B286B400605855 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -51,9 +51,9 @@
 			isa = PBXGroup;
 			children = (
 				DBD7F9A220B286B400605855 /* MainViewController.swift */,
-				DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */,
-				DB0FE3F820BA88C800299DF7 /* TestViewController.swift */,
 				DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */,
+				DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */,
+				DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB0FE3F920BA88C800299DF7 /* TestViewController.swift in Sources */,
+				DB0FE3F920BA88C800299DF7 /* CircleProgressBarViewController.swift in Sources */,
 				DB0270EA20B7FCFF0000F99A /* ButtonViewController.swift in Sources */,
 				DBDB7DCB20B7F659007175FE /* Extension.swift in Sources */,
 				DBD7F9A320B286B400605855 /* MainViewController.swift in Sources */,

@@ -13,6 +13,10 @@ class ChainAnimationViewController : UIViewController {
     
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var subLabel: UILabel!
+    
+    deinit {
+        print("deinit : ChainAnimationViewController")
+    }
 }
 
 
@@ -25,6 +29,7 @@ extension ChainAnimationViewController {
         setupLabels()
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapView)))
     }
+    
     
 }
 
