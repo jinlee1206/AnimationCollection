@@ -14,10 +14,8 @@ import UIKit
 
 
 class ButtonViewController : UIViewController {
-    
-    
+        
     @IBOutlet var buttons: [UIButton]!
-    
     
     override func viewDidLoad() {
         
@@ -84,7 +82,7 @@ extension UIButton {
         flash.duration = 1
         flash.fromValue = 1
         flash.toValue = 0.1
-        flash.timingFunction = CAMediaTimingFunction(name:kCAMediaTimingFunctionEaseOut)
+        flash.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeOut)
         flash.autoreverses = true
         flash.repeatCount = 1
         

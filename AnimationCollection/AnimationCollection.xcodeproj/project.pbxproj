@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567AA08621897F2A00E43E86 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AA08521897F2A00E43E86 /* CardViewController.swift */; };
+		567AA0882189827800E43E86 /* MainCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567AA0872189827800E43E86 /* MainCardViewController.swift */; };
+		6385AFC48E0F83C8F36C5D0F /* Pods_AnimationCollection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86775F77739AAE5AC4EE62E6 /* Pods_AnimationCollection.framework */; };
 		DB0270EA20B7FCFF0000F99A /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */; };
 		DB02713920B99ECE0000F99A /* ChainAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */; };
 		DB0FE3F920BA88C800299DF7 /* CircleProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */; };
@@ -21,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		567AA08521897F2A00E43E86 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		567AA0872189827800E43E86 /* MainCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardViewController.swift; sourceTree = "<group>"; };
+		86775F77739AAE5AC4EE62E6 /* Pods_AnimationCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA8CB28A07FF9095061429C4 /* Pods-AnimationCollection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationCollection.debug.xcconfig"; path = "Target Support Files/Pods-AnimationCollection/Pods-AnimationCollection.debug.xcconfig"; sourceTree = "<group>"; };
 		DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainAnimationViewController.swift; sourceTree = "<group>"; };
 		DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleProgressBarViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +41,7 @@
 		DBDB7DCA20B7F659007175FE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DBDB7DCC20B7F714007175FE /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		DBDB7DCE20B7F76A007175FE /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		F9DCED964A6009465F5F5638 /* Pods-AnimationCollection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationCollection.release.xcconfig"; path = "Target Support Files/Pods-AnimationCollection/Pods-AnimationCollection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +49,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6385AFC48E0F83C8F36C5D0F /* Pods_AnimationCollection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		868A81B4218159D1A414F271 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86775F77739AAE5AC4EE62E6 /* Pods_AnimationCollection.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB9141E8529E7A56F1E09714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA8CB28A07FF9095061429C4 /* Pods-AnimationCollection.debug.xcconfig */,
+				F9DCED964A6009465F5F5638 /* Pods-AnimationCollection.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DB0270E820B7FCD30000F99A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +80,8 @@
 				DB0270E920B7FCFF0000F99A /* ButtonViewController.swift */,
 				DB02713820B99ECE0000F99A /* ChainAnimationViewController.swift */,
 				DB0FE3F820BA88C800299DF7 /* CircleProgressBarViewController.swift */,
+				567AA0872189827800E43E86 /* MainCardViewController.swift */,
+				567AA08521897F2A00E43E86 /* CardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -63,6 +91,8 @@
 			children = (
 				DBD7F99F20B286B400605855 /* AnimationCollection */,
 				DBD7F99E20B286B400605855 /* Products */,
+				CB9141E8529E7A56F1E09714 /* Pods */,
+				868A81B4218159D1A414F271 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBD7F9AF20B286B600605855 /* Build configuration list for PBXNativeTarget "AnimationCollection" */;
 			buildPhases = (
+				7E9E4B6C01E467460E5B99D9 /* [CP] Check Pods Manifest.lock */,
 				DBD7F99920B286B400605855 /* Sources */,
 				DBD7F99A20B286B400605855 /* Frameworks */,
 				DBD7F99B20B286B400605855 /* Resources */,
+				05AFCF0890DFED03219365CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +154,7 @@
 				TargetAttributes = {
 					DBD7F99C20B286B400605855 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -157,6 +190,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05AFCF0890DFED03219365CE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimationCollection/Pods-AnimationCollection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimationCollection/Pods-AnimationCollection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E9E4B6C01E467460E5B99D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationCollection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBD7F99920B286B400605855 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -166,9 +248,11 @@
 				DB0270EA20B7FCFF0000F99A /* ButtonViewController.swift in Sources */,
 				DBDB7DCB20B7F659007175FE /* Extension.swift in Sources */,
 				DBD7F9A320B286B400605855 /* MainViewController.swift in Sources */,
+				567AA08621897F2A00E43E86 /* CardViewController.swift in Sources */,
 				DB02713920B99ECE0000F99A /* ChainAnimationViewController.swift in Sources */,
 				DBDB7DCF20B7F76A007175FE /* MainTableViewCell.swift in Sources */,
 				DBD7F9A120B286B400605855 /* AppDelegate.swift in Sources */,
+				567AA0882189827800E43E86 /* MainCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +394,7 @@
 		};
 		DBD7F9B020B286B600605855 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA8CB28A07FF9095061429C4 /* Pods-AnimationCollection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -321,13 +406,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexcon.AnimationCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		DBD7F9B120B286B600605855 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DCED964A6009465F5F5638 /* Pods-AnimationCollection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,7 +425,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexcon.AnimationCollection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -26,7 +26,7 @@ class CircleProgressBarViewController : UIViewController {
         
         trackLayer.strokeColor = UIColor.lightGray.cgColor
         trackLayer.lineWidth = 10
-        trackLayer.lineCap = kCALineCapRound
+        trackLayer.lineCap = CAShapeLayerLineCap.round
         trackLayer.fillColor = UIColor.clear.cgColor
         view.layer.addSublayer(trackLayer)
         
@@ -35,7 +35,7 @@ class CircleProgressBarViewController : UIViewController {
         
         shapeLayer.strokeColor = UIColor.red.cgColor
         shapeLayer.lineWidth = 10
-        shapeLayer.lineCap = kCALineCapRound
+        shapeLayer.lineCap = CAShapeLayerLineCap.round
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.strokeEnd = 0
         
@@ -51,7 +51,7 @@ class CircleProgressBarViewController : UIViewController {
         let basicAnimation = CABasicAnimation(keyPath:"strokeEnd")
         basicAnimation.toValue = 1
         basicAnimation.duration = 2
-        basicAnimation.fillMode = kCAFillModeForwards
+        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
         basicAnimation.isRemovedOnCompletion = false
         
         shapeLayer.add(basicAnimation, forKey:"urSoBasic")
