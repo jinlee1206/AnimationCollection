@@ -8,9 +8,11 @@
 
 import Foundation
 import UIKit
+import Then
 
 class ChainAnimationViewController : UIViewController {
     
+
     @IBOutlet weak var mainLabel: UILabel!
     @IBOutlet weak var subLabel: UILabel!
     
@@ -74,14 +76,7 @@ extension ChainAnimationViewController {
                     self.subLabel.transform = CGAffineTransform(translationX: -30, y: -200)
                     
                 }) { (_) in
-                    
-                    //                    let profileVC = ProfileViewController()
-                    //
-                    //                    self.present(profileVC, animated: true, completion: {
-                    //
-                    //
-                    //
-                    //                    })
+
                     
                 }
                 

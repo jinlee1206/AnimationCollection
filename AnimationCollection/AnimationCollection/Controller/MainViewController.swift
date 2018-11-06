@@ -9,11 +9,21 @@
 import UIKit
 
 
+
+
+
 class MainViewController: UIViewController {
+    
+    enum InitType {
+        
+        case STORYBOARD
+        case CODE
+    }
     
     let viewControllers = [ButtonViewController.self,
                    ChainAnimationViewController.self,
-                   CircleProgressBarViewController.self
+                   CircleProgressBarViewController.self,
+                   MainCardViewController.self
                    
                   ]
 
@@ -62,6 +72,7 @@ extension MainViewController : UITableViewDelegate , UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+    
             self.navigationController?.pushViewController(viewControllers[indexPath.row].fromStoryboard(), animated: true)
         
         }
